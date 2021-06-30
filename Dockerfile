@@ -11,3 +11,7 @@ RUN pip install --no-cache-dir -U pip && \
 RUN apt-get update && apt-get install -y \
   default-jre \
   && rm -rf /var/lib/apt/lists/*
+
+ENV SPARK_HOME="/spark"
+ENV PATH="/spark/bin:${PATH}"
+
