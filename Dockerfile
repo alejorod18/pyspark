@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.8.10
 
 RUN wget https://downloads.apache.org/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz && \
     tar -xvf spark-3.1.2-bin-hadoop3.2.tgz && \
